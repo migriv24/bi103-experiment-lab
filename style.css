@@ -249,6 +249,65 @@ section p:last-child { margin-bottom: 0; }
 .portfolio-note li strong { color: var(--blue-d); }
 
 
+/* ── disclaimer banner (amber, pops against the blue) ── */
+.disclaimer {
+  background: rgba(240,180,80,0.16); border: 1px solid rgba(210,140,40,0.42);
+  border-left: 5px solid #e0992a; border-radius: var(--radius); padding: 1rem 1.2rem; margin-bottom: 1.4rem;
+}
+.disc-tag {
+  display: inline-block; font-family: var(--mono); font-size: 0.7rem; font-weight: 700;
+  letter-spacing: 0.08em; text-transform: uppercase; color: #a9711a; margin-bottom: 0.4rem;
+}
+.disclaimer p { font-size: 0.93rem; color: #5e4a24; margin-bottom: 0; }
+.disclaimer em { font-style: italic; color: #4a3a18; }
+
+/* ── direct quotes from the source ── */
+.quote {
+  margin: 1.4rem 0; padding: 1rem 1.3rem; background: var(--surface);
+  border-left: 4px solid var(--blue); border-radius: 0 10px 10px 0; box-shadow: var(--shadow);
+}
+.quote p { font-size: 1.05rem; font-weight: 700; font-style: italic; color: var(--blue-d); line-height: 1.5; margin-bottom: 0.5rem; }
+.quote cite { font-family: var(--mono); font-size: 0.72rem; font-style: normal; color: var(--muted); }
+.quote.tight { margin: 0.8rem 0 0; padding: 0.6rem 0.95rem; box-shadow: none; background: rgba(47,111,208,0.06); border-left-width: 3px; }
+.quote.tight p { font-size: 0.9rem; margin-bottom: 0.3rem; }
+q { font-style: italic; color: var(--blue-d); }
+
+/* ── twist / problem card ── */
+.twist-card {
+  background: rgba(43,179,199,0.08); border: 1px solid var(--line); border-left: 5px solid var(--cyan);
+  border-radius: var(--radius); padding: 1.2rem 1.4rem; margin: 1.8rem 0 1rem;
+}
+.twist-card h4 { font-size: 1.05rem; font-weight: 800; color: var(--blue-d); margin: 0 0 0.5rem; }
+.twist-card p { font-size: 0.92rem; }
+
+/* ── study groups ── */
+.group-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 1rem 0 1.4rem; }
+.group-card {
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 16px; box-shadow: var(--shadow); border-top: 4px solid var(--blue);
+}
+.group-card.control { border-top-color: #7a92c0; }
+.group-card.mixed   { border-top-color: var(--blue); }
+.group-card.running { border-top-color: var(--cyan); }
+.group-k {
+  font-family: var(--mono); font-size: 0.64rem; font-weight: 700; letter-spacing: 0.06em;
+  text-transform: uppercase; color: var(--blue); display: block; margin-bottom: 8px;
+}
+.group-card h4 { font-size: 1rem; font-weight: 800; color: var(--blue-d); margin: 10px 0 0.35rem; }
+.group-card p { font-size: 0.86rem; margin-bottom: 0; }
+
+/* ── real photos (not pencil placeholders) ── */
+.bp-fig.real { background: transparent; border: none; min-height: 0; display: block; text-align: center; overflow: visible; }
+.bp-fig.real .bp-img {
+  mix-blend-mode: normal; width: auto; max-width: 100%; max-height: 460px; margin: 0 auto;
+  border: 1px solid var(--line); border-radius: 10px; box-shadow: var(--shadow);
+}
+.bp-fig.real figcaption { font-family: var(--font); font-size: 0.82rem; color: var(--muted); margin-top: 0.55rem; line-height: 1.5; }
+.bp-fig.real figcaption strong { color: var(--blue-d); }
+
+.photo-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 1.4rem 0; }
+.photo-row .bp-img { width: 100%; height: 180px; object-fit: cover; max-height: none; }
+
 /* ── inline content links ── */
 .xlink {
   color: var(--blue); font-weight: 700; text-decoration: underline;
@@ -283,7 +342,7 @@ footer { text-align: center; padding: 2.4rem 1rem 3rem; color: var(--muted); fon
 /* ── responsive ── */
 @media (max-width: 740px) {
   .qa-row, .split, .muscle-row, .pred-row { grid-template-columns: 1fr; }
-  .var-grid, .timeline, .limit-grid { grid-template-columns: 1fr; }
+  .var-grid, .timeline, .limit-grid, .group-grid, .photo-row { grid-template-columns: 1fr; }
   .related-strip { grid-template-columns: repeat(2, 1fr); }
   #main-nav a { padding: 0.6rem 0.7rem; font-size: 0.7rem; }
 }

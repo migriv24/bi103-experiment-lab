@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Strength Into Speed &ndash; BI 103 Experimental Design</title>
+  <title>Strength Into Speed? &ndash; BI 103 Experimental Design</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
@@ -14,25 +14,25 @@
   <header>
     <div class="header-inner">
       <p class="header-pre">BI 103 &nbsp;&middot;&nbsp; Experimental Design Media</p>
-      <h1>STRENGTH<br />INTO SPEED</h1>
-      <p class="subtitle">An experiment I designed but have not run: can two strength sessions a week make my easy runs faster?</p>
+      <h1>STRENGTH<br />INTO SPEED?</h1>
+      <p class="subtitle">A proposed (and openly unrealistic) experiment, built on a literature review that could not find sufficient evidence it even works.</p>
 
       <div class="title-block">
-        <div><span>Project</span>Strength &rarr; Speed</div>
+        <div><span>Question</span>Does lifting help?</div>
         <div><span>Course</span>BI 103</div>
-        <div><span>Type</span>Design only</div>
-        <div><span>Sheet</span>01 of 01</div>
+        <div><span>Type</span>Proposed study</div>
+        <div><span>Realistic?</span>Not really</div>
       </div>
     </div>
   </header>
 
   <nav id="main-nav">
     <a href="#question">Question</a>
-    <a href="#background">Background</a>
-    <a href="#hypothesis">Hypothesis</a>
+    <a href="#theory">Theory</a>
+    <a href="#study">The Study</a>
     <a href="#variables">Variables</a>
-    <a href="#protocol">Protocol</a>
-    <a href="#predictions">Predictions</a>
+    <a href="#limits">Reality Check</a>
+    <a href="#personal">Why I Care</a>
   </nav>
 
   <main>
@@ -41,31 +41,36 @@
     <section id="question">
       <h2><span class="sec-tag">01</span> The Question</h2>
 
+      <div class="disclaimer">
+        <span class="disc-tag">Read me first</span>
+        <p>This is a thought experiment. The scale is deliberately unrealistic: I am not actually going to recruit a thousand runners or train anyone for three months. The assignment is to <em>design</em> a study, so I designed a big, ambitious one, and then used the research to stay honest about why even this would struggle to give a clean answer.</p>
+      </div>
+
       <div class="science-lens">
         <span class="lens-tag">Learning Outcome: Science Skills</span>
-        <p>Science skills are the process behind a discovery: asking a clear question, forming a hypothesis, choosing variables, controlling for everything else, and deciding how to measure the result. This piece is that process on paper. The point is to show a sound experiment can be designed, not to run it.</p>
+        <p>Science skills are the process behind a discovery: a clear question, a hypothesis, chosen variables, controls, and a plan to measure the result. They also include knowing the limits of your own design. This piece does both.</p>
       </div>
 
       <div class="qa-row">
         <figure class="bp-fig">
-          <img src="images/question.jpeg" alt="question mark" class="bp-img" onerror="this.parentNode.classList.add('ph'); this.remove();" />
-          <span class="bp-ph">&#10067;<small>question.jpeg</small></span>
+          <img src="images/runner.jpeg" alt="me running" class="bp-img" onerror="this.parentNode.classList.add('ph'); this.remove();" />
+          <span class="bp-ph">&#127939;<small>runner.jpeg</small></span>
         </figure>
         <div>
-          <p class="big-q">Does adding two short lower-body strength sessions per week make my easy runs faster, without running any extra miles?</p>
-          <p>I already run easy, mellow miles (the <a class="xlink" href="https://migriv24.github.io/bi103-bodyviz-lab/">Soft Running piece</a> covers that). The natural next question is whether a small change, lifting twice a week, could make those same easy runs quicker at the same effort.</p>
+          <p class="big-q">If runners add strength training to their week, do their race times actually get faster?</p>
+          <p>It sounds obvious that stronger legs would make you quicker. The surprising part is that the research is not sure. The mechanism people point to is <strong>running economy</strong>, defined in the review as <q>the oxygen or metabolic cost to run at a given submaximal velocity</q> (Blagrove et al., 2018a, p. 1133, as cited in Bottrill, 2023). Better economy means less energy at the same pace. The open question is whether strength training reliably improves it.</p>
         </div>
       </div>
     </section>
 
-    <!-- BACKGROUND -->
-    <section id="background">
-      <h2><span class="sec-tag">02</span> Background &amp; Theory</h2>
+    <!-- THEORY -->
+    <section id="theory">
+      <h2><span class="sec-tag">02</span> Background &amp; What the Research Says</h2>
 
       <div class="split">
         <div>
-          <p>A good experiment stands on something already known. The relevant idea here is <strong>running economy</strong>: how much energy you burn to hold a given pace. Two runners at the same speed can spend very different amounts of energy, and the more economical one can go faster for the same effort.</p>
-          <p>Endurance research has found that <strong>strength training improves running economy</strong> in trained runners, mostly through neuromuscular adaptations and stiffer, more efficient tendons rather than through bigger muscles. That is the mechanism this experiment leans on.</p>
+          <p>I am grounding this in a 2023 literature review that gathered 19 studies on resistance training and running. It is the honest starting point, because its headline finding is essentially <strong>"we cannot tell yet."</strong></p>
+          <p>That is not a dead end. It is the reason a study is worth designing at all, and it sets the bar for what a good design would have to control for.</p>
         </div>
         <figure class="bp-fig tall">
           <img src="images/paper.jpeg" alt="research paper" class="bp-img" onerror="this.parentNode.classList.add('ph'); this.remove();" />
@@ -73,186 +78,229 @@
         </figure>
       </div>
 
+      <blockquote class="quote">
+        <p>&ldquo;This review did not find sufficient evidence to definitively conclude that resistance training improves running economy or performance, but instead recommends steps to conduct more consistent and controlled future research.&rdquo;</p>
+        <cite>Bottrill (2023), Abstract, p. 2</cite>
+      </blockquote>
+
       <div class="cite-card">
         <span class="cite-label">Grounding source</span>
-        <p>Ronnestad, B. R., &amp; Mujika, I. (2014). Optimizing strength training for running and cycling endurance performance: A review. <em>Scandinavian Journal of Medicine &amp; Science in Sports, 24</em>(4), 603&ndash;612.</p>
-        <p class="cite-note">Note to self: confirm exact page numbers and DOI before submitting.</p>
+        <p>Bottrill, James, "Resistance Training and Running Performance and Economy: A Literature Review" (2023). University Honors Theses. Paper 1333. Portland State University.</p>
+        <p class="cite-note"><a class="xlink" href="https://doi.org/10.15760/honors.1362">https://doi.org/10.15760/honors.1362</a></p>
       </div>
     </section>
 
-    <!-- HYPOTHESIS -->
-    <section id="hypothesis">
-      <h2><span class="sec-tag">03</span> Hypothesis</h2>
-      <div class="qa-row">
-        <figure class="bp-fig">
-          <img src="images/lightbulb.jpeg" alt="lightbulb" class="bp-img" onerror="this.parentNode.classList.add('ph'); this.remove();" />
-          <span class="bp-ph">&#128161;<small>lightbulb.jpeg</small></span>
-        </figure>
-        <div class="hypo-card">
-          <p><strong>If</strong> I add two lower-body strength sessions per week for six weeks while keeping my running the same, <strong>then</strong> my average pace at an easy effort will get faster, <strong>because</strong> stronger, more efficient legs use less energy to hold the same speed.</p>
-          <p class="null-h">Null hypothesis: the strength training makes no measurable difference to my easy pace.</p>
+    <!-- THE STUDY -->
+    <section id="study">
+      <h2><span class="sec-tag">03</span> The Proposed Study</h2>
+
+      <h3>Step 1 &middot; Recruit (optimistically)</h3>
+      <p>I would reach out to every running club in the area. Oregon State has a running club, and to be cheerfully unrealistic about it, I will assume every one of its followers signs up.</p>
+
+      <figure class="bp-fig real">
+        <img src="images/osu_instagram.png" alt="OSU running club Instagram" class="bp-img" />
+        <figcaption>Recruitment pool: the OSU running club, <strong>@oregonstaterunning</strong> on Instagram (screenshot credited to them). About 1,178 followers, so optimistically, n = 1,178.</figcaption>
+      </figure>
+
+      <h3>Step 2 &middot; Measure a baseline</h3>
+      <p>At the start, every participant runs three time trials at their fastest effort: a <strong>1 mile</strong>, a <strong>5k</strong>, and a <strong>10k</strong>. These are the baseline numbers we compare against later. Measuring real race times (not lab economy) is actually what the review recommends for usefulness:</p>
+
+      <blockquote class="quote">
+        <p>&ldquo;it may be more useful to just focus on measuring RP [running performance] through time trials over a distance that the subject trains for, as this has a great degree of external validity.&rdquo;</p>
+        <cite>Bottrill (2023), p. 18</cite>
+      </blockquote>
+
+      <h3>Step 3 &middot; Split into three groups</h3>
+      <div class="group-grid">
+        <div class="group-card control">
+          <span class="group-k">Group A &middot; Control</span>
+          <figure class="bp-fig small">
+            <img src="images/runner.jpeg" alt="runner" class="bp-img" onerror="this.parentNode.classList.add('ph'); this.remove();" />
+            <span class="bp-ph">&#129485;<small>runner.jpeg</small></span>
+          </figure>
+          <h4>Do whatever</h4>
+          <p>No instructions at all for three months. The baseline for normal life.</p>
         </div>
+        <div class="group-card mixed">
+          <span class="group-k">Group B &middot; Mixed</span>
+          <figure class="bp-fig small">
+            <img src="images/strength.jpeg" alt="strength training" class="bp-img" onerror="this.parentNode.classList.add('ph'); this.remove();" />
+            <span class="bp-ph">&#127947;<small>strength.jpeg</small></span>
+          </figure>
+          <h4>Strength + running</h4>
+          <p>One hour of strength training and one hour of running, every day.</p>
+        </div>
+        <div class="group-card running">
+          <span class="group-k">Group C &middot; Running</span>
+          <figure class="bp-fig small">
+            <img src="images/runners_group.jpeg" alt="group running" class="bp-img" onerror="this.parentNode.classList.add('ph'); this.remove();" />
+            <span class="bp-ph">&#127939;<small>runners_group.jpeg</small></span>
+          </figure>
+          <h4>Running only</h4>
+          <p>Two hours of running every day, and no strength training.</p>
+        </div>
+      </div>
+
+      <div class="hypo-card">
+        <p><strong>Hypothesis:</strong> after three months, <strong>Group B (strength + running)</strong> will have the best improvement in 1 mile, 5k, and 10k times.</p>
+        <p class="null-h">Null hypothesis: the strength training makes no measurable difference, matching what the review actually found across the literature.</p>
+      </div>
+
+      <h3>Step 4 &middot; Run it for three months, then re-test</h3>
+      <div class="timeline">
+        <div class="tl-step">
+          <span class="tl-week">Day 0</span>
+          <h4>Baseline</h4>
+          <p>Everyone runs the 1 mile, 5k, and 10k time trials at max effort.</p>
+        </div>
+        <div class="tl-step active">
+          <span class="tl-week">3 months</span>
+          <h4>Intervention</h4>
+          <p>Each group follows its assignment. Watches and logs track everything.</p>
+        </div>
+        <div class="tl-step">
+          <span class="tl-week">End</span>
+          <h4>Re-test</h4>
+          <p>Everyone repeats the same three time trials. Compare to baseline, by group.</p>
+        </div>
+      </div>
+
+      <div class="twist-card">
+        <h4>The problem hiding in the design</h4>
+        <p>How do you fairly compare "one hour of lifting plus one hour of running" against "two hours of running"? There is no honest exchange rate between them, and the review says as much:</p>
+        <blockquote class="quote tight">
+          <p>&ldquo;There is no standardised volume and frequency of either mode of training throughout the literature.&rdquo;</p>
+          <cite>Bottrill (2023), p. 16</cite>
+        </blockquote>
+        <p>The review even suggests a target ratio of endurance to resistance training that <q>should not stray far from 3:1</q> (Bottrill, 2023, p. 19). My design uses a 1:1 split, which already bends one of its recommendations. That is the kind of thing this assignment is for: noticing it.</p>
       </div>
     </section>
 
     <!-- VARIABLES -->
     <section id="variables">
-      <h2><span class="sec-tag">04</span> The Variables</h2>
-      <p>The whole design comes down to changing one thing and holding everything else still.</p>
-
-      <div class="var-grid">
-        <div class="var-card iv">
-          <span class="var-kind">Independent</span>
-          <figure class="bp-fig small">
-            <img src="images/dumbbell.jpeg" alt="dumbbell" class="bp-img" onerror="this.parentNode.classList.add('ph'); this.remove();" />
-            <span class="bp-ph">&#127947;<small>dumbbell.jpeg</small></span>
-          </figure>
-          <h3>Strength training</h3>
-          <p>The one thing I change: two lower-body sessions per week (squats, lunges, calf raises, hip work).</p>
-        </div>
-
-        <div class="var-card dv">
-          <span class="var-kind">Dependent</span>
-          <figure class="bp-fig small">
-            <img src="images/watch.jpeg" alt="watch" class="bp-img" onerror="this.parentNode.classList.add('ph'); this.remove();" />
-            <span class="bp-ph">&#9201;<small>watch.jpeg</small></span>
-          </figure>
-          <h3>Easy-run pace</h3>
-          <p>What I measure: average pace at a fixed easy effort, with resting heart rate and perceived effort as backups.</p>
-        </div>
-
-        <div class="var-card cv">
-          <span class="var-kind">Controlled</span>
-          <div class="ctrl-icons">
-            <figure class="bp-fig mini">
-              <img src="images/sun.jpeg" alt="sun" class="bp-img" onerror="this.parentNode.classList.add('ph'); this.remove();" />
-              <span class="bp-ph">&#9728;<small>sun</small></span>
-            </figure>
-            <figure class="bp-fig mini">
-              <img src="images/route.jpeg" alt="route" class="bp-img" onerror="this.parentNode.classList.add('ph'); this.remove();" />
-              <span class="bp-ph">&#128205;<small>route</small></span>
-            </figure>
-          </div>
-          <h3>Everything else</h3>
-          <p>Held steady: weekly mileage, same route, same morning time, sleep, and no big diet changes.</p>
-        </div>
-      </div>
+      <h2><span class="sec-tag">04</span> The Variables I Cannot Control</h2>
+      <p>With over a thousand random people, the confounds pile up fast. I would at least record each person's age and sex, but I cannot hold them still, and I would give no diet instructions, which alone could swamp the results.</p>
 
       <div class="muscle-row">
         <figure class="bp-fig wide">
-          <img src="images/leg_muscles.jpeg" alt="leg muscles" class="bp-img" onerror="this.parentNode.classList.add('ph'); this.remove();" />
-          <span class="bp-ph">&#129461;<small>leg_muscles.jpeg</small></span>
+          <img src="images/body_types.jpeg" alt="different body types" class="bp-img" onerror="this.parentNode.classList.add('ph'); this.remove();" />
+          <span class="bp-ph">&#128101;<small>body_types.jpeg</small></span>
         </figure>
         <div>
-          <h3>What gets trained</h3>
-          <p>The strength work targets the muscles that drive running: quads, hamstrings, glutes, and calves. These are the same regions that lit up hottest in the <a class="xlink" href="https://migriv24.github.io/bi103-bodyviz-lab/">Soft Running scan</a>, which is part of why this experiment follows naturally from it.</p>
+          <p>Age, sex, training history, diet, and body type all change how a person responds to training. The review is blunt that this is exactly what sinks a clean conclusion:</p>
+        </div>
+      </div>
+
+      <blockquote class="quote">
+        <p>&ldquo;the null hypothesis cannot be rejected to definitively conclude that any form of RT improves RE or performance because of the overwhelming array of confounding variables.&rdquo;</p>
+        <cite>Bottrill (2023), Conclusion, p. 18&ndash;19</cite>
+      </blockquote>
+
+      <div class="var-grid">
+        <div class="var-card">
+          <span class="var-kind">Age</span>
+          <p>Performance and trainability shift with age, so the same program lands differently on a 22 year old and a 50 year old.</p>
+          <blockquote class="quote tight">
+            <p>&ldquo;There is a noticeable decline in performance after 30 years.&rdquo;</p>
+            <cite>Bottrill (2023), p. 14</cite>
+          </blockquote>
+        </div>
+        <div class="var-card">
+          <span class="var-kind">Sex</span>
+          <p>Men and women can respond differently, to the point the review suggests studying one at a time.</p>
+          <blockquote class="quote tight">
+            <p>&ldquo;Barnes et al. (2013) found that RT was beneficial to RE in females, but possibly harmful in men.&rdquo;</p>
+            <cite>Bottrill (2023), p. 14</cite>
+          </blockquote>
+        </div>
+        <div class="var-card">
+          <span class="var-kind">Background &amp; diet</span>
+          <p>Training history varies wildly, and with no diet control, two people doing the same program are not really running the same experiment.</p>
+          <blockquote class="quote tight">
+            <p>&ldquo;varying results cannot be definitively attributed to the RT interventions.&rdquo;</p>
+            <cite>Bottrill (2023), p. 16</cite>
+          </blockquote>
         </div>
       </div>
     </section>
 
-    <!-- PROTOCOL -->
-    <section id="protocol">
-      <h2><span class="sec-tag">05</span> The Protocol</h2>
-      <p>A simple before-and-after design on a single person (me), run over six weeks.</p>
-
-      <div class="timeline">
-        <div class="tl-step">
-          <span class="tl-week">Week 0</span>
-          <h4>Baseline</h4>
-          <p>Measure my easy pace across several normal runs and record resting heart rate. No strength training yet.</p>
-        </div>
-        <div class="tl-step active">
-          <span class="tl-week">Weeks 1&ndash;6</span>
-          <h4>Intervention</h4>
-          <p>Keep running exactly the same, and add the two strength sessions each week. Keep logging every run.</p>
-        </div>
-        <div class="tl-step">
-          <span class="tl-week">End</span>
-          <h4>Re-test</h4>
-          <p>Measure easy pace and resting heart rate again under the same conditions, then compare to baseline.</p>
-        </div>
-      </div>
-
-      <div class="method-row">
-        <h3>How I would measure it</h3>
-        <div class="method-icons">
-          <figure class="bp-fig small">
-            <img src="images/watch.jpeg" alt="watch" class="bp-img" onerror="this.parentNode.classList.add('ph'); this.remove();" />
-            <span class="bp-ph">&#9201;<small>watch.jpeg</small></span>
-          </figure>
-          <figure class="bp-fig small">
-            <img src="images/heart.jpeg" alt="heart" class="bp-img" onerror="this.parentNode.classList.add('ph'); this.remove();" />
-            <span class="bp-ph">&#10084;<small>heart.jpeg</small></span>
-          </figure>
-          <figure class="bp-fig small">
-            <img src="images/notebook.jpeg" alt="notebook" class="bp-img" onerror="this.parentNode.classList.add('ph'); this.remove();" />
-            <span class="bp-ph">&#128211;<small>notebook.jpeg</small></span>
-          </figure>
-        </div>
-        <p>Pace and heart rate come from my Galaxy Watch, the same device behind the <a class="xlink" href="https://migriv24.github.io/bi103-datamgmt-lab/">Data Management Lab</a>, logged run by run. This experiment could fold straight into the body data I keep collecting for the course.</p>
-      </div>
-    </section>
-
-    <!-- PREDICTIONS -->
-    <section id="predictions">
-      <h2><span class="sec-tag">06</span> Predicted Results &amp; Limits</h2>
-
-      <div class="pred-row">
-        <figure class="bp-fig">
-          <img src="images/arrow_up.jpeg" alt="up arrow" class="bp-img" onerror="this.parentNode.classList.add('ph'); this.remove();" />
-          <span class="bp-ph">&#11014;<small>arrow_up.jpeg</small></span>
-        </figure>
-        <div>
-          <p>If the hypothesis holds, I expect a <strong>small but real improvement</strong>: a few seconds per mile faster at the same easy effort, and possibly a slightly lower heart rate at the same pace. The change should be modest, since six weeks is short and these are gentle runs.</p>
-        </div>
-      </div>
+    <!-- REALITY CHECK -->
+    <section id="limits">
+      <h2><span class="sec-tag">05</span> Reality Check</h2>
+      <p>To be clear about how unrealistic this is, here is the design grading itself against the review's own recommendations.</p>
 
       <div class="limit-grid">
         <div class="limit-card">
-          <h3>Confounds to watch</h3>
-          <p>Weather, motivation, weight changes, and simply getting more used to the route could all nudge my pace on their own. Any of them could fake an effect or hide a real one.</p>
+          <h3>The n is a fantasy</h3>
+          <p>Assuming 1,178 strangers will commit to a daily routine for three months, show up for timed 10k tests, and follow their group is not going to happen. Real recruitment and dropout would gut the sample.</p>
         </div>
         <div class="limit-card">
-          <h3>Limitations</h3>
-          <p>This is a single person with no control group and no blinding, so it cannot prove cause and effect on its own. It can only show a trend worth a bigger, better-controlled study.</p>
+          <h3>Too short</h3>
+          <p>My plan runs three months (about 12 weeks). The review recommends studies be <q>at least 20 weeks in length</q> (Bottrill, 2023, p. 19), so mine may end before any real effect could show.</p>
         </div>
         <div class="limit-card ethics">
-          <h3>Safety &amp; ethics</h3>
-          <p>The variable being tested is healthy by design. Strength training is good for me, done with proper form and rest, and there is no risky dieting or extreme load. This follows the assignment's guidance to test changes that should improve health.</p>
+          <h3>Still a healthy design</h3>
+          <p>On the upside, the variable I am testing is a healthy one. Strength training and running are both good for participants, with no risky dieting or extreme load, which follows the assignment's guidance to test changes that should improve health.</p>
         </div>
       </div>
+    </section>
+
+    <!-- PERSONAL / DISCUSSION -->
+    <section id="personal">
+      <h2><span class="sec-tag">06</span> Why I Actually Care</h2>
+
+      <p>So what does a thousand-person fantasy study have to do with me? Looking at my own data, I have run for about fifteen minutes a day, give or take, for a long stretch, and my 5k time has not really improved. That is almost certainly about how little I run, not a mystery. I just run easy. I do not run fast.</p>
+
+      <p>Lately I have been trying to push to twenty minutes a day or more, which is about all I have time for. That is exactly why the question matters to me. If strength training could improve my times too, then instead of only piling on more running, I could add something new that might take less time and still help. At-home strength training is also just more accessible than running: sometimes it is raining, or freezing, or the trail I use is packed with people I would rather not weave around.</p>
+
+      <div class="photo-row">
+        <figure class="bp-fig real">
+          <img src="images/scenery_run.jpeg" alt="scenery on a run" class="bp-img" />
+          <figcaption>Scenery from one of my runs.</figcaption>
+        </figure>
+        <figure class="bp-fig real">
+          <img src="images/trail_run.jpeg" alt="the trail I run" class="bp-img" />
+          <figcaption>The trail I usually take.</figcaption>
+        </figure>
+        <figure class="bp-fig real">
+          <img src="images/dog_walk.jpeg" alt="walking my dog" class="bp-img" />
+          <figcaption>Some of the movement is just walking the dog.</figcaption>
+        </figure>
+      </div>
+
+      <p>I am the kind of runner the review basically sets aside, since <q>recreational runners may train for general health and fitness rather than for a specific event</q> (Bottrill, 2023, p. 14). I am not chasing a race. I just want the time I spend to count. The honest takeaway, and the whole point of this piece, is that the research cannot yet promise me that adding strength work would make me faster. It can only say it might, and that finding out for sure is genuinely hard.</p>
+
+      <section id="related">
+        <h2><span class="sec-tag">&#128279;</span> Related Labs</h2>
+        <p>This question grows out of three other pieces in the portfolio.</p>
+        <div class="related-strip">
+          <a class="related-card" href="https://migriv24.github.io/bi103-bodyviz-lab/">
+            <span class="related-k">Body Data</span>Soft Running
+            <small>my easy, mellow miles</small>
+          </a>
+          <a class="related-card" href="https://migriv24.github.io/bi103-movement-lab/">
+            <span class="related-k">Biology Skills</span>Skeletal &amp; Muscular
+            <small>the muscles in question</small>
+          </a>
+          <a class="related-card" href="https://migriv24.github.io/bi103-datamgmt-lab/">
+            <span class="related-k">Human Skills</span>Data Management
+            <small>where my own numbers come from</small>
+          </a>
+          <a class="related-card home" href="https://migriv24.github.io/bi103-final-portfolio/">
+            <span class="related-k">Hub</span>Back to Portfolio
+            <small>all nine labs</small>
+          </a>
+        </div>
+      </section>
 
       <div class="portfolio-note">
         <h3>Portfolio: Science Skills</h3>
         <ul>
-          <li><strong>Question to hypothesis:</strong> A clear, testable question becomes an if/then/because hypothesis tied to a known mechanism.</li>
-          <li><strong>Variables:</strong> One independent variable, a measurable dependent variable, and a real list of controls.</li>
-          <li><strong>Protocol &amp; measurement:</strong> A baseline, an intervention, and a re-test, all measured the same way.</li>
-          <li><strong>Honesty:</strong> The design names its own confounds and limits instead of hiding them.</li>
+          <li><strong>Grounded:</strong> The whole design is anchored to a literature review, with direct quotes carrying the key claims.</li>
+          <li><strong>Honest:</strong> It states a hypothesis, then uses the source to show why even a huge study would struggle to confirm it.</li>
+          <li><strong>Variables:</strong> One thing changed per group, with the uncontrollable confounds named out loud.</li>
+          <li><strong>Personal:</strong> It connects a thousand-person fantasy back to a real reason I would want the answer.</li>
         </ul>
-      </div>
-    </section>
-
-    <section id="related">
-      <h2><span class="sec-tag">&#128279;</span> Related Labs</h2>
-      <p>This experiment grows out of three other pieces in the portfolio.</p>
-      <div class="related-strip">
-        <a class="related-card" href="https://migriv24.github.io/bi103-bodyviz-lab/">
-          <span class="related-k">Body Data</span>Soft Running
-          <small>the easy runs this builds on</small>
-        </a>
-        <a class="related-card" href="https://migriv24.github.io/bi103-movement-lab/">
-          <span class="related-k">Biology Skills</span>Skeletal &amp; Muscular
-          <small>the muscles being trained</small>
-        </a>
-        <a class="related-card" href="https://migriv24.github.io/bi103-datamgmt-lab/">
-          <span class="related-k">Human Skills</span>Data Management
-          <small>how the data is collected</small>
-        </a>
-        <a class="related-card home" href="https://migriv24.github.io/bi103-final-portfolio/">
-          <span class="related-k">Hub</span>Back to Portfolio
-          <small>all nine labs</small>
-        </a>
       </div>
     </section>
 
@@ -260,7 +308,7 @@
 
   <footer>
     <p>BI 103 &nbsp;&middot;&nbsp; Spring 2026 &nbsp;&middot;&nbsp; Oregon State University</p>
-    <p class="footer-note">A study design, not a study. Illustrations are placeholders for now.</p>
+    <p class="footer-note">A study designed, not run, and not realistic on purpose. Some illustrations are placeholders. Instagram screenshot credited to @oregonstaterunning.</p>
   </footer>
 
   <script src="script.js"></script>
