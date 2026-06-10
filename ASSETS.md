@@ -16,7 +16,7 @@ Instead of photos of myself, these use ClickLaFont renders (Blender, transparent
 - [x] `runners_group.jpeg` — many Clicks running (running-only group) ← manyClicksRunning01
 - [x] `strength.jpeg` — Click squatting (strength + running group) ← clickSquatPose
 - [x] `body_types.jpeg` — many varied Clicks (the "variables" section) ← manyClicksRunning02
-- [ ] `paper.jpeg` — optional journal-article sketch for the background section (still a placeholder).
+- [x] `paper.jpeg` — Adobe Stock photo (#237521842), a research/writing scene, found via akpsi.org. Credited in its figcaption. NOT original / NOT properly licensed for publication; fine for the assignment with credit, but swap for a free-licensed image (Unsplash/Pexels/Wikimedia) or an original drawing if you want it fully clean.
 
 ## Notes
 - The whole piece leans on direct quotes from the thesis (Bottrill, 2023, https://doi.org/10.15760/honors.1362).
