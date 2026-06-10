@@ -52,9 +52,10 @@
       </div>
 
       <div class="qa-row">
-        <figure class="bp-fig">
-          <img src="images/runner.jpeg" alt="me running" class="bp-img" onerror="this.parentNode.classList.add('ph'); this.remove();" />
+        <figure class="bp-fig real">
+          <img src="images/runner.jpeg" alt="ClickLaFont running" class="bp-img" onerror="this.parentNode.classList.add('ph'); this.remove();" />
           <span class="bp-ph">&#127939;<small>runner.jpeg</small></span>
+          <figcaption>ClickLaFont, running in my place.</figcaption>
         </figure>
         <div>
           <p class="big-q">If runners add strength training to their week, do their race times actually get faster?</p>
@@ -114,8 +115,8 @@
       <div class="group-grid">
         <div class="group-card control">
           <span class="group-k">Group A &middot; Control</span>
-          <figure class="bp-fig small">
-            <img src="images/runner.jpeg" alt="runner" class="bp-img" onerror="this.parentNode.classList.add('ph'); this.remove();" />
+          <figure class="bp-fig small real">
+            <img src="images/runner.jpeg" alt="Click running" class="bp-img" onerror="this.parentNode.classList.add('ph'); this.remove();" />
             <span class="bp-ph">&#129485;<small>runner.jpeg</small></span>
           </figure>
           <h4>Do whatever</h4>
@@ -123,8 +124,8 @@
         </div>
         <div class="group-card mixed">
           <span class="group-k">Group B &middot; Mixed</span>
-          <figure class="bp-fig small">
-            <img src="images/strength.jpeg" alt="strength training" class="bp-img" onerror="this.parentNode.classList.add('ph'); this.remove();" />
+          <figure class="bp-fig small real">
+            <img src="images/strength.jpeg" alt="Click doing a squat" class="bp-img" onerror="this.parentNode.classList.add('ph'); this.remove();" />
             <span class="bp-ph">&#127947;<small>strength.jpeg</small></span>
           </figure>
           <h4>Strength + running</h4>
@@ -132,8 +133,8 @@
         </div>
         <div class="group-card running">
           <span class="group-k">Group C &middot; Running</span>
-          <figure class="bp-fig small">
-            <img src="images/runners_group.jpeg" alt="group running" class="bp-img" onerror="this.parentNode.classList.add('ph'); this.remove();" />
+          <figure class="bp-fig small real">
+            <img src="images/runners_group.jpeg" alt="many Clicks running" class="bp-img" onerror="this.parentNode.classList.add('ph'); this.remove();" />
             <span class="bp-ph">&#127939;<small>runners_group.jpeg</small></span>
           </figure>
           <h4>Running only</h4>
@@ -182,9 +183,10 @@
       <p>With over a thousand random people, the confounds pile up fast. I would at least record each person's age and sex, but I cannot hold them still, and I would give no diet instructions, which alone could swamp the results.</p>
 
       <div class="muscle-row">
-        <figure class="bp-fig wide">
-          <img src="images/body_types.jpeg" alt="different body types" class="bp-img" onerror="this.parentNode.classList.add('ph'); this.remove();" />
+        <figure class="bp-fig wide real">
+          <img src="images/body_types.jpeg" alt="many different Click runners" class="bp-img" onerror="this.parentNode.classList.add('ph'); this.remove();" />
           <span class="bp-ph">&#128101;<small>body_types.jpeg</small></span>
+          <figcaption>Every participant is different. Here, every Click is.</figcaption>
         </figure>
         <div>
           <p>Age, sex, training history, diet, and body type all change how a person responds to training. The review is blunt that this is exactly what sinks a clean conclusion:</p>
@@ -316,7 +318,18 @@
   <script>
   window.CLICK_CONFIG = {
     idleSprite: 'Neutral_LookingTopRight_NoAction',
-    dialogues: []
+    dialogues: [
+      {
+        trigger: 'enter',
+        sprite: 'Happy_LookingRight_Gesture',
+        text: 'Hold on... those are pictures of ME. Nobody told me I was the test subject. And for the record, I do not actually bend that way. You saw the squat.'
+      },
+      {
+        trigger: 'scroll:0.5',
+        sprite: 'Neutral_LookingTopRight_Pointing',
+        text: 'Real talk though: the science here says we cannot actually prove that lifting makes me faster. But I am flattered you modeled me a little headband for it.'
+      }
+    ]
   };
   </script>
   <script src="https://migriv24.github.io/bi103-final-portfolio/click-overlay.js"></script>

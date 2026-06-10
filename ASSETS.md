@@ -7,15 +7,16 @@
 - `images/osu_instagram.png` — OSU running club screenshot (credited to @oregonstaterunning)
 - `images/scenery_run.jpeg`, `images/trail_run.jpeg`, `images/dog_walk.jpeg` — photos in the personal/discussion section
 
-## Drawings still needed (you will make these)
-Same pipeline as before: photographed flat, saved into `images/` with these exact names. They
-auto-swap into the page (dashed placeholders disappear on load).
+## Character assets — DONE (ClickLaFont stand-ins)
+Instead of photos of myself, these use ClickLaFont renders (Blender, transparent PNGs in
+`startingAssets/`) composited onto early-2000s / Windows-7 style gradient backgrounds by
+`startingAssets/compose_click.py`. Re-run that script to regenerate.
 
-- [ ] `runner.jpeg` — a photo/drawing of **me running** (used in the question + control group)
-- [ ] `runners_group.jpeg` — **multiple people running** (the running-only group)
-- [ ] `strength.jpeg` — **a person doing strength training** (the strength + running group)
-- [ ] `body_types.jpeg` — **different body types** (the "variables we cannot control" section)
-- [ ] `paper.jpeg` — a journal article / the thesis (background section). Optional; reuse any paper sketch.
+- [x] `runner.jpeg` — Click running (question + control group) ← clickRunPose1
+- [x] `runners_group.jpeg` — many Clicks running (running-only group) ← manyClicksRunning01
+- [x] `strength.jpeg` — Click squatting (strength + running group) ← clickSquatPose
+- [x] `body_types.jpeg` — many varied Clicks (the "variables" section) ← manyClicksRunning02
+- [ ] `paper.jpeg` — optional journal-article sketch for the background section (still a placeholder).
 
 ## Notes
 - The whole piece leans on direct quotes from the thesis (Bottrill, 2023, https://doi.org/10.15760/honors.1362).
