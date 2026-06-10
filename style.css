@@ -249,6 +249,32 @@ section p:last-child { margin-bottom: 0; }
 .portfolio-note li strong { color: var(--blue-d); }
 
 
+/* ── inline content links ── */
+.xlink {
+  color: var(--blue); font-weight: 700; text-decoration: underline;
+  text-decoration-color: rgba(47,111,208,0.4); text-underline-offset: 2px; transition: text-decoration-color 0.15s;
+}
+.xlink:hover { text-decoration-color: var(--blue); }
+
+
+/* ── related labs strip ── */
+.related-strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 1rem; }
+.related-card {
+  display: flex; flex-direction: column; text-decoration: none;
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+  border-top: 4px solid var(--blue); padding: 14px 16px; box-shadow: var(--shadow);
+  font-weight: 800; color: var(--blue-d); transition: transform 0.12s, box-shadow 0.15s;
+}
+.related-card.home { border-top-color: var(--cyan); }
+.related-card:hover { transform: translateY(-3px); box-shadow: 0 10px 28px rgba(47,111,208,0.2); }
+.related-k {
+  font-family: var(--mono); font-size: 0.62rem; font-weight: 700; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--blue); margin-bottom: 4px;
+}
+.related-card.home .related-k { color: var(--cyan); }
+.related-card small { font-weight: 600; font-size: 0.76rem; color: var(--muted); margin-top: 4px; }
+
+
 /* ── footer ── */
 footer { text-align: center; padding: 2.4rem 1rem 3rem; color: var(--muted); font-size: 0.85rem; border-top: 1px solid var(--line); }
 .footer-note { margin-top: 0.35rem; font-family: var(--mono); font-size: 0.74rem; opacity: 0.85; }
@@ -258,6 +284,7 @@ footer { text-align: center; padding: 2.4rem 1rem 3rem; color: var(--muted); fon
 @media (max-width: 740px) {
   .qa-row, .split, .muscle-row, .pred-row { grid-template-columns: 1fr; }
   .var-grid, .timeline, .limit-grid { grid-template-columns: 1fr; }
+  .related-strip { grid-template-columns: repeat(2, 1fr); }
   #main-nav a { padding: 0.6rem 0.7rem; font-size: 0.7rem; }
 }
 @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
